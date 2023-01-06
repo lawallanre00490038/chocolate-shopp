@@ -1,38 +1,252 @@
-.App {
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* Navbar starts */
+.navbar{
+  display: flex;
+  background-color: #4a2c2a
+}
+
+.logo{
+  width: 20vh;
+  height: 20vh;
+}
+
+.navUl{
+  color: white;
+  display: flex;
+  padding: 40px;
+  list-style: none;
+}
+
+
+.cart_signup{
+  color: white;
+  display: flex;
+}
+
+.cart_signup p {
+  padding: 10px;
+}
+
+.cart_signup p a {
+  color: white;
+  text-decoration: none;
+}
+/* Navbar ends */
+
+/* Header starts */
+.header{
+  background-image: url("../public/images/01-Blog-Coffee-L.jpg");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header-2{
+  font-size: 60px;
+  color: white;
+  padding-top: 90px;
+  padding-left: 30px;
+}
+
+.paragraph{
+  font-size: 30px;
+  color: white;
+  padding-left: 30px;
+}
+
+.btn-btn{
+  padding-left: 30px;
+  width: 15%;
+}
+
+.btn{
+  border: 2px solid;
+  border-radius: 5px;
+  color: white;
+  font-size: 30px;
+}
+/* Header ends */
+
+/* Gallery section */
+
+.containa{
+  background-color: #e3cbce;
+  padding: 30px;
+}
+
+.header-best{
+  text-align: center;
+  color: #ffffff;
+  padding-top: 40px;
+}
+
+.imageContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  column-gap: 3rem;
+  row-gap: 1.5rem;
+  height: 100%;
+  padding-top: 50px;
+}
+.imageContainer img{
+  width: 100%;
+  border-radius: 2rem;
+}
+
+.image-details{
   text-align: center;
 }
+/* Gallery ends */
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Review starts */
+.checked {
+  color: orange;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.review{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  /* padding-left: 250px; */
+  background-color: #ffffff;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-top: 30px;
+}
+
+.span{
+  text-align: center;
+  padding-right: 100px;
+}
+/* Review ends */
+
+/* Footer starts */
+.footer{
+  display: flex;
+  justify-content: space-between;
+  background-color: #e3cbce;
+}
+
+.footer-coffee{
+  padding-left: 150px;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  width: 25%;
+}
+
+.footer-coffee p a {
+  text-decoration: none;
+  color: black;
+}
+
+.footer-service{
+  padding-top: 50px;
+  width: 25%;
+}
+
+.footer-service p a {
+  text-decoration: none;
+  color: black;
+}
+
+.footer-about{
+  padding-top: 50px;
+  width: 25%;
+}
+
+.footer-about p a {
+  text-decoration: none;
+  color: black;
+}
+
+.social-media{
+  align-self: flex-end;
+  padding-right: 95px;
+}
+
+.social-media .bi{
+  padding-right: 10px;
+}
+/* Footer ends */
+
+/* Bordered form */
+.form-class{
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+
+form {
+  border: 3px solid #f1f1f1;
+}
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #04AA6D;
   color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+/* Add a hover effect for buttons */
+button:hover {
+  opacity: 0.8;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Extra style for the cancel button (red) */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the avatar image inside this container */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+/* Avatar image */
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+}
+
+/* The "Forgot password" text */
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
   }
-  to {
-    transform: rotate(360deg);
+  .cancelbtn {
+    width: 100%;
   }
 }
+
