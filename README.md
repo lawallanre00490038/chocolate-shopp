@@ -1,1 +1,1 @@
-# chocolate-shopp
+# chocolate-shop
